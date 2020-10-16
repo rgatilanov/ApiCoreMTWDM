@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using API.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -15,6 +16,7 @@ namespace API.Controllers
     {
         //https://localhost:44369/api/user
         // GET: api/<UserController>
+        [Authorize]
         [HttpGet]
         public IEnumerable<User> GetUsers()
         {
