@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using API.Models;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -15,22 +16,74 @@ namespace API.Controllers
         //https://localhost:44369/api/user
         // GET: api/<UserController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IEnumerable<User> GetUsers()
         {
-            return new string[] { "value1", "value2" };
+            List<User> users = new List<User>();
+            users.Add(new Models.User()
+            {
+                CreateDate = DateTime.Now,
+                ID = 1,
+                Name = "Ramón Gerardo",
+                Nick = "rgatilanov",
+                Password = null,
+                accountType = AccountType.Administrator
+            });
+
+            users.Add(new Models.User()
+            {
+                CreateDate = DateTime.Now,
+                ID = 2,
+                Name = "Juan Perez",
+                Nick = "juan.perez",
+                Password = null,
+                accountType = AccountType.Basic,
+            });
+
+            return users;
         }
 
         // GET api/<UserController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public User GetUser(int id)
         {
-            return "value";
+            Models.User user = null;
+            if (id == 1)
+                user = new Models.User()
+                {
+                    CreateDate = DateTime.Now,
+                    ID = 1,
+                    Nick = "rgatilanov",
+                    Password = null,
+                    Name = "Ramón Gerardo",
+                    accountType = AccountType.Administrator
+                };
+            else
+                user = new Models.User()
+                {
+                    CreateDate = DateTime.Now,
+                    ID = 2,
+                    Name = "Juan Perez",
+                    Nick = "juan.perez",
+                    Password = null,
+                    accountType = AccountType.Basic,
+                };
+
+            return user;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="user"> {"id": 3,"nick": "leones2019","password": "123123","createDate": "2019-08-02T12:43:02.9396464-05:00"}
+        /// </param>
+        /// <returns></returns>
         // POST api/<UserController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public User PostUser([FromBody] User value)
         {
+            /*Lógica a base de datos*/
+            value.Name = "ACTUALIZADO!!!";
+            return value;
         }
 
         // PUT api/<UserController>/5
@@ -41,8 +94,10 @@ namespace API.Controllers
 
         // DELETE api/<UserController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public User DeleteUser(int id)
         {
+            /*Lógica a base de datos*/
+            return new Models.User();
         }
     }
 }
