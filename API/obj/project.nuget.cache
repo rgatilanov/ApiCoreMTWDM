@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "HBz6mc9K352NZIwys/15/aZi83OA1aWJN9jQ8HOu4WdbJ7S11zse8QP1+vQhJZqz7jpx3KvtjbEI8pge8x3V1w==",
+  "dgSpecHash": "vrjXWQxACsdkbgk1VPtnaWSPfs/JO3sO7JqWt4q4C4qZ7ad+L6u55+6ddp1rj1KHYY/xHiE0fChjdwAZwS8TBA==",
   "success": true,
   "projectFilePath": "G:\\EjerciciosMTWDM2020\\ApiCoreMTWDM\\API\\API.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ProBook 450 HP\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\ProBook 450 HP\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.8.0\\microsoft.identitymodel.jsonwebtokens.6.8.0.nupkg.sha512",
+    "C:\\Users\\ProBook 450 HP\\.nuget\\packages\\microsoft.identitymodel.logging\\6.8.0\\microsoft.identitymodel.logging.6.8.0.nupkg.sha512",
+    "C:\\Users\\ProBook 450 HP\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.8.0\\microsoft.identitymodel.tokens.6.8.0.nupkg.sha512",
+    "C:\\Users\\ProBook 450 HP\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.8.0\\system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }
