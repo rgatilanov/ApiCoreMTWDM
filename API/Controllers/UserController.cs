@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using API.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -14,13 +15,18 @@ namespace API.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        //https://localhost:44369/api/user
-        // GET: api/<UserController>
-        [Authorize]
+        readonly IConfiguration _configuration;
+        public UserController(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
+
         [HttpGet]
         public IEnumerable<User> GetUsers()
         {
             List<User> users = new List<User>();
+#if false
+           
             users.Add(new Models.User()
             {
                 CreateDate = DateTime.Now,
@@ -41,7 +47,10 @@ namespace API.Controllers
                 accountType = AccountType.Basic,
             });
 
+#endif
+            var ConnectionStringLocal = _configuration.GetValue<string>("ServidorLocal");
             return users;
+
         }
 
         // GET api/<UserController>/5
@@ -86,20 +95,6 @@ namespace API.Controllers
             /*Lógica a base de datos*/
             value.Name = "ACTUALIZADO!!!";
             return value;
-        }
-
-        // PUT api/<UserController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/<UserController>/5
-        [HttpDelete("{id}")]
-        public User DeleteUser(int id)
-        {
-            /*Lógica a base de datos*/
-            return new Models.User();
         }
     }
 }

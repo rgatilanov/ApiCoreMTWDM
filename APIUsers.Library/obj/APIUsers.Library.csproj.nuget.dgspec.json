@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ProBook 450 HP\\source\\repos\\APIUsers.Library\\APIUsers.Library.csproj": {}
+    "G:\\EjerciciosMTWDM2020\\ApiCoreMTWDM\\APIUsers.Library\\APIUsers.Library.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ProBook 450 HP\\source\\repos\\APIUsers.Library\\APIUsers.Library.csproj": {
+    "G:\\EjerciciosMTWDM2020\\ApiCoreMTWDM\\APIUsers.Library\\APIUsers.Library.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ProBook 450 HP\\source\\repos\\APIUsers.Library\\APIUsers.Library.csproj",
+        "projectUniqueName": "G:\\EjerciciosMTWDM2020\\ApiCoreMTWDM\\APIUsers.Library\\APIUsers.Library.csproj",
         "projectName": "APIUsers.Library",
-        "projectPath": "C:\\Users\\ProBook 450 HP\\source\\repos\\APIUsers.Library\\APIUsers.Library.csproj",
+        "projectPath": "G:\\EjerciciosMTWDM2020\\ApiCoreMTWDM\\APIUsers.Library\\APIUsers.Library.csproj",
         "packagesPath": "C:\\Users\\ProBook 450 HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ProBook 450 HP\\source\\repos\\APIUsers.Library\\obj\\",
+        "outputPath": "G:\\EjerciciosMTWDM2020\\ApiCoreMTWDM\\APIUsers.Library\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",

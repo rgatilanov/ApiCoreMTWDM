@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "whhmQrSecC4UWFz9GDajU1rYAvRyseGI52L1q15UFHl4Dg7ZjvUp/JluCKSBGqlU3OewQrt/D4+lsXfsond/DA==",
+  "dgSpecHash": "B/qix6wwNCJCG8TX63+EVRMJ9hkoDkdcOkLHJBgJlYhdbn4S4tgshfZD991rc6jOMr0sKMUc0FFSf9t+gDZAHQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ProBook 450 HP\\source\\repos\\APIUsers.Library\\APIUsers.Library.csproj",
+  "projectFilePath": "G:\\EjerciciosMTWDM2020\\ApiCoreMTWDM\\APIUsers.Library\\APIUsers.Library.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ProBook 450 HP\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\ProBook 450 HP\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

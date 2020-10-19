@@ -7,3 +7,12 @@ C:\Users\ProBook 450 HP\source\repos\APIUsers.Library\bin\Debug\netcoreapp3.1\AP
 C:\Users\ProBook 450 HP\source\repos\APIUsers.Library\obj\Debug\netcoreapp3.1\APIUsers.Library.csproj.CoreCompileInputs.cache
 C:\Users\ProBook 450 HP\source\repos\APIUsers.Library\obj\Debug\netcoreapp3.1\APIUsers.Library.dll
 C:\Users\ProBook 450 HP\source\repos\APIUsers.Library\obj\Debug\netcoreapp3.1\APIUsers.Library.pdb
+G:\EjerciciosMTWDM2020\ApiCoreMTWDM\APIUsers.Library\bin\Debug\netcoreapp3.1\APIUsers.Library.deps.json
+G:\EjerciciosMTWDM2020\ApiCoreMTWDM\APIUsers.Library\bin\Debug\netcoreapp3.1\APIUsers.Library.dll
+G:\EjerciciosMTWDM2020\ApiCoreMTWDM\APIUsers.Library\bin\Debug\netcoreapp3.1\APIUsers.Library.pdb
+G:\EjerciciosMTWDM2020\ApiCoreMTWDM\APIUsers.Library\obj\Debug\netcoreapp3.1\APIUsers.Library.csprojAssemblyReference.cache
+G:\EjerciciosMTWDM2020\ApiCoreMTWDM\APIUsers.Library\obj\Debug\netcoreapp3.1\APIUsers.Library.AssemblyInfoInputs.cache
+G:\EjerciciosMTWDM2020\ApiCoreMTWDM\APIUsers.Library\obj\Debug\netcoreapp3.1\APIUsers.Library.AssemblyInfo.cs
+G:\EjerciciosMTWDM2020\ApiCoreMTWDM\APIUsers.Library\obj\Debug\netcoreapp3.1\APIUsers.Library.csproj.CoreCompileInputs.cache
+G:\EjerciciosMTWDM2020\ApiCoreMTWDM\APIUsers.Library\obj\Debug\netcoreapp3.1\APIUsers.Library.dll
+G:\EjerciciosMTWDM2020\ApiCoreMTWDM\APIUsers.Library\obj\Debug\netcoreapp3.1\APIUsers.Library.pdb
