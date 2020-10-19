@@ -1,0 +1,9 @@
+C:\Users\ProBook 450 HP\source\repos\APIUsers.Library\bin\Debug\netcoreapp3.1\APIUsers.Library.deps.json
+C:\Users\ProBook 450 HP\source\repos\APIUsers.Library\bin\Debug\netcoreapp3.1\APIUsers.Library.dll
+C:\Users\ProBook 450 HP\source\repos\APIUsers.Library\obj\Debug\netcoreapp3.1\APIUsers.Library.csprojAssemblyReference.cache
+C:\Users\ProBook 450 HP\source\repos\APIUsers.Library\obj\Debug\netcoreapp3.1\APIUsers.Library.AssemblyInfoInputs.cache
+C:\Users\ProBook 450 HP\source\repos\APIUsers.Library\obj\Debug\netcoreapp3.1\APIUsers.Library.AssemblyInfo.cs
+C:\Users\ProBook 450 HP\source\repos\APIUsers.Library\bin\Debug\netcoreapp3.1\APIUsers.Library.pdb
+C:\Users\ProBook 450 HP\source\repos\APIUsers.Library\obj\Debug\netcoreapp3.1\APIUsers.Library.csproj.CoreCompileInputs.cache
+C:\Users\ProBook 450 HP\source\repos\APIUsers.Library\obj\Debug\netcoreapp3.1\APIUsers.Library.dll
+C:\Users\ProBook 450 HP\source\repos\APIUsers.Library\obj\Debug\netcoreapp3.1\APIUsers.Library.pdb
