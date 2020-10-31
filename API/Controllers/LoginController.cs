@@ -28,6 +28,8 @@ namespace API.Controllers
         /// <param name="usMin">{"Nick": "rgatilanov","Password": "96CAE35CE8A9B0244178BF28E4966C2CE1B8385723A96A6B838858CDD6CA0A1E"}</param>
         /// <returns></returns>
         [HttpPost]
+        #region Método de simulación (sin conexión a BD ) de login
+
         public Login Authenticate(UserMin usMin)
         {
             // Integración a base de datos
@@ -57,6 +59,38 @@ namespace API.Controllers
             }
             else
                 return null;
+
         }
+        #endregion
+        #region Método para integración con Angular
+        /*public IActionResult Login([FromBody] UserMin user)
+        {
+            if (user == null)
+            {
+                return BadRequest("Invalid client request");
+            }
+
+            if (user.Nick == "rgatilanov" && user.Password == "4297f44b13955235245b2497399d7a93") //MD5 (123123)
+            {
+                var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("maestria-mtwdm-2019"));
+                var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
+
+                var tokeOptions = new JwtSecurityToken(
+                    issuer: "http://localhost:44369",
+                    audience: "http://localhost:44369",
+                    claims: new List<System.Security.Claims.Claim>(),
+                    expires: DateTime.Now.AddMinutes(5),
+                    signingCredentials: signinCredentials
+                );
+
+                var tokenString = new JwtSecurityTokenHandler().WriteToken(tokeOptions);
+                return Ok(new { Token = tokenString });
+            }
+            else
+            {
+                return Unauthorized();
+            }
+        }*/
+        #endregion
     }
 }

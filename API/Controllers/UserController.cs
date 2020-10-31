@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using API.Helpers;
 using API.Models;
+using APIUsers.Library.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -22,11 +24,11 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<User> GetUsers()
+        public IEnumerable<APIUsers.Library.Models.User> GetUsers()
         {
-            List<User> users = new List<User>();
+
 #if false
-           
+           List<User> users = new List<User>();
             users.Add(new Models.User()
             {
                 CreateDate = DateTime.Now,
@@ -48,9 +50,13 @@ namespace API.Controllers
             });
 
 #endif
+            List<APIUsers.Library.Models.User> listUsers = new List<APIUsers.Library.Models.User>();
             var ConnectionStringLocal = _configuration.GetValue<string>("ServidorLocal");
-            return users;
-
+            using(IUser User = Factorizador.CrearConexionServicio(APIUsers.Library.Models.ConnectionType.MSSQL, ConnectionStringLocal))
+            {
+                listUsers = User.GetUsers();
+            }
+            return listUsers;
         }
 
         // GET api/<UserController>/5
@@ -90,11 +96,15 @@ namespace API.Controllers
         /// <returns></returns>
         // POST api/<UserController>
         [HttpPost]
-        public User PostUser([FromBody] User value)
+        public int InsertUser([FromBody] APIUsers.Library.Models.UserMin value)
         {
-            /*Lógica a base de datos*/
-            value.Name = "ACTUALIZADO!!!";
-            return value;
+            int id = 0;
+            var ConnectionStringLocal = _configuration.GetValue<string>("ServidorLocal");
+            using (IUser User = Factorizador.CrearConexionServicio(APIUsers.Library.Models.ConnectionType.MSSQL, ConnectionStringLocal))
+            {
+                id = User.InsertUser(value.Nick, Functions.GetSHA256(value.Password));
+            }
+            return id;
         }
     }
 }

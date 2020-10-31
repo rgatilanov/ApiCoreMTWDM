@@ -89,6 +89,35 @@ namespace APIUsers.Library.Services
             return list;
         }
 
+        public int InsertUser(string nick, string password)
+        {
+            int IdUser = 0;
+            List<SqlParameter> _Parametros = new List<SqlParameter>();
+            try
+            {
+                _Parametros.Add(new SqlParameter("@Nick", nick));
+                _Parametros.Add(new SqlParameter("@Password", password));
+                
+                SqlParameter valreg = new SqlParameter();
+                valreg.ParameterName = "@Id";
+                valreg.DbType = DbType.Int32;
+                valreg.Direction = ParameterDirection.Output;
+                _Parametros.Add(valreg);
+
+                sql.PrepararProcedimiento("dbo.[USER.Insert]", _Parametros);
+                IdUser = int.Parse(sql.EjecutarProcedimientoOutput().ToString());
+                return IdUser;
+            }
+            catch (SqlException sqlEx)
+            {
+                throw new Exception(sqlEx.Message, sqlEx);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message, ex);
+            }
+        }
+
         #region IDisposable Support
         private bool disposedValue = false; // Para detectar llamadas redundantes
 
