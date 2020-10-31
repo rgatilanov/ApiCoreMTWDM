@@ -28,5 +28,26 @@ namespace APIUsers.Library.Interfaces
 
             return nuevoMotor;
         }
+
+        public static ILogin CrearConexionServicioLogin(Models.ConnectionType type, string connectionString)
+        {
+            ILogin nuevoMotor = null; ;
+            switch (type)
+            {
+                case Models.ConnectionType.NONE:
+                    break;
+                case Models.ConnectionType.MSSQL:
+                    SqlConexion sql = SqlConexion.Conectar(connectionString);
+                    nuevoMotor = LoginService.CrearInstanciaSQL(sql);
+                    break;
+                case Models.ConnectionType.MYSQL:
+
+                    break;
+                default:
+                    break;
+            }
+
+            return nuevoMotor;
+        }
     }
 }

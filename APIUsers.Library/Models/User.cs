@@ -15,6 +15,7 @@ namespace APIUsers.Library.Models
         public string Name { get; set; }
         public DateTime CreateDate { get; set; }
         public AccountType accountType { get; set; }
+        public string JWT { get; set; }
     }
 
     public enum AccountType : int
