@@ -12,7 +12,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/auth/[controller]")]
     [ApiController]
     public class LoginController : ControllerBase
     {
@@ -63,8 +63,7 @@ namespace API.Controllers
         }*/
         #endregion
         #region Método para integración con Angular
-
-        /*public IActionResult Login([FromBody] UserMin user)
+        public IActionResult Login([FromBody] UserMin user)
         {
             if (user == null)
             {
@@ -91,9 +90,9 @@ namespace API.Controllers
             {
                 return Unauthorized();
             }
-        }*/
+        }
         #endregion
-        public APIUsers.Library.Models.User Login([FromBody] APIUsers.Library.Models.UserMin user)
+       /*public APIUsers.Library.Models.User Login([FromBody] APIUsers.Library.Models.UserMin user)
         {
             var ConnectionStringLocal = _configuration.GetValue<string>("ConnectionStringLocal");
             //var ConnectionStringAzure = _configuration.GetValue<string>("ConnectionStringAzure");
@@ -125,6 +124,6 @@ namespace API.Controllers
             //    ID = 1,
             //    JWT = "jajajajaaj"
             //};
-        }
+        }*/
     }
 }
