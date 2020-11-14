@@ -53,7 +53,7 @@ namespace API.Controllers
 
 #endif
             List<APIUsers.Library.Models.User> listUsers = new List<APIUsers.Library.Models.User>();
-            var ConnectionStringLocal = _configuration.GetValue<string>("ServidorLocal");
+            var ConnectionStringLocal = _configuration.GetValue<string>("ServidorAzure");
             using(IUser User = Factorizador.CrearConexionServicio(APIUsers.Library.Models.ConnectionType.MSSQL, ConnectionStringLocal))
             {
                 listUsers = User.GetUsers();

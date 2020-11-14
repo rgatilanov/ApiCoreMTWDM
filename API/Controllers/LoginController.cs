@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using API.Models;
@@ -70,15 +71,21 @@ namespace API.Controllers
                 return BadRequest("Invalid client request");
             }
 
-            if (user.Nick == "rgatilanov" && user.Password == "4297f44b13955235245b2497399d7a93") //MD5 (123123)
+            if (user.Nick == "rgatilanov" && user.Password == "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e") //sha2 (123123)
             {
                 var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration.GetValue<string>("SecretKey")));
                 var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
 
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, user.Nick),
+                    new Claim(ClaimTypes.Role, "Manager") 
+                };
+
                 var tokeOptions = new JwtSecurityToken(
                     issuer: "http://localhost:44369",
                     audience: "http://localhost:44369",
-                    claims: new List<System.Security.Claims.Claim>(),
+                    claims: claims,
                     expires: DateTime.Now.AddMinutes(5),
                     signingCredentials: signinCredentials
                 );

@@ -1,0 +1,9 @@
+G:\EjerciciosMTWDM2020\ApiCoreMTWDM\APIUsers.Library\bin\Release\netcoreapp3.1\APIUsers.Library.deps.json
+G:\EjerciciosMTWDM2020\ApiCoreMTWDM\APIUsers.Library\bin\Release\netcoreapp3.1\APIUsers.Library.dll
+G:\EjerciciosMTWDM2020\ApiCoreMTWDM\APIUsers.Library\bin\Release\netcoreapp3.1\APIUsers.Library.pdb
+G:\EjerciciosMTWDM2020\ApiCoreMTWDM\APIUsers.Library\obj\Release\netcoreapp3.1\APIUsers.Library.csprojAssemblyReference.cache
+G:\EjerciciosMTWDM2020\ApiCoreMTWDM\APIUsers.Library\obj\Release\netcoreapp3.1\APIUsers.Library.AssemblyInfoInputs.cache
+G:\EjerciciosMTWDM2020\ApiCoreMTWDM\APIUsers.Library\obj\Release\netcoreapp3.1\APIUsers.Library.AssemblyInfo.cs
+G:\EjerciciosMTWDM2020\ApiCoreMTWDM\APIUsers.Library\obj\Release\netcoreapp3.1\APIUsers.Library.csproj.CoreCompileInputs.cache
+G:\EjerciciosMTWDM2020\ApiCoreMTWDM\APIUsers.Library\obj\Release\netcoreapp3.1\APIUsers.Library.dll
+G:\EjerciciosMTWDM2020\ApiCoreMTWDM\APIUsers.Library\obj\Release\netcoreapp3.1\APIUsers.Library.pdb
